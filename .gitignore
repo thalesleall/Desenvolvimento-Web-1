@@ -1,6 +1,7 @@
 # Dependências do Node
 node_modules/
 
+*/primeira-aula.pdf
 # Diretórios de build
 /dist/
 /build/
