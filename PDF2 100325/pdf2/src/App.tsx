@@ -3,6 +3,7 @@ import './App.css';
 import Cadastro from './components/cadastro';
 import Tarefas from './components/tarefas';
 import CorFundo from './components/cor-fundo';  // Importando o novo componente
+import Footer from './components/footer';
 
 function App() {
   const [nome, setNome] = useState(localStorage.getItem("nomeUsuario") || "");
@@ -25,6 +26,7 @@ function App() {
         <Tarefas />
       </div>
       <CorFundo />  {/* Adicionando o componente CorFundo */}
+      <Footer/>
     </>
   );
 }
