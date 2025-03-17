@@ -1,0 +1,9 @@
+.principal-card {
+    border: 2px solid red;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
