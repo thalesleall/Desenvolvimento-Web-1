@@ -26,7 +26,7 @@ function App() {
         <Tarefas />
       </div>
       <CorFundo />  {/* Adicionando o componente CorFundo */}
-      <Footer/>
+      <Footer/> 
     </>
   );
 }
