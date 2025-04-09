@@ -15,7 +15,7 @@ const routes: RouteConfig[] = Object.keys(pages).map((path) => {
   const Component = lazy(pages[path] as () => Promise<{ default: React.FC }>)
 
   return {
-    path: name.toLowerCase() === 'home' ? '/' : `/${name.toLowerCase()}`,
+    path: name.toLowerCase() === 'inicio' ? '/' : `/${name.toLowerCase()}`,
     Component
   }
 })
