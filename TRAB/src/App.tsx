@@ -3,7 +3,7 @@ import { Suspense, lazy, LazyExoticComponent } from 'react'
 
 interface RouteConfig {
   path: string
-  Component: LazyExoticComponent<() => JSX.Element>
+  Component: LazyExoticComponent<React.FC>
 }
 
 // Importa todos os arquivos .tsx da pasta pages/
