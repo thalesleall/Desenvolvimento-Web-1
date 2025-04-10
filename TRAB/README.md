@@ -1,54 +1,123 @@
-# React + TypeScript + Vite
+📘 Pokedex React com PokeAPI
+Uma Pokédex simples, moderna e leve, feita com React, TypeScript, Vite, Axios e React Router, que consome dados diretamente da PokeAPI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Explore o mundo Pokémon de forma divertida e prática! ✨
 
-Currently, two official plugins are available:
+🚀 O que esse projeto faz?
+Essa Pokédex foi desenvolvida como um projeto de aprendizado, mas já traz diversas funcionalidades bacanas:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Funcionalidades
+🔎 Listagem de Pokémons em formato de grade
 
-## Expanding the ESLint configuration
+🌀 Scroll infinito para carregar mais Pokémons conforme você desce a página
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📄 Página de detalhes ao clicar em um Pokémon
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+📊 Informações completas, como:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Nome, ID, imagem oficial
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Tipos, altura, peso
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Habilidades e estatísticas base
+
+🌐 Navegação com React Router DOM
+
+⚡ Carregamento sob demanda (Lazy Loading) para melhor performance
+
+🔐 Tipagem segura com TypeScript
+
+⚙️ Projeto moderno com Vite para desenvolvimento rápido
+
+🧰 Tecnologias utilizadas
+Ferramenta	Descrição
+React 18+	Biblioteca para construir UIs
+TypeScript	Superset do JS com tipagem estática
+Vite	Bundler ultra-rápido
+Axios	Cliente HTTP para requisições
+React Router	Navegação entre páginas
+PokeAPI	Fonte oficial de dados dos Pokémons
+CSS Modular	Estilização separada por componente
+🧑‍💻 Como rodar o projeto localmente
+📦 Pré-requisitos
+Antes de tudo, certifique-se de ter instalado:
+
+Node.js (recomendo a versão LTS)
+
+npm ou yarn
+
+📁 Passo a passo
+bash
+Copy
+Edit
+# 1. Clone o repositório
+git clone https://github.com/thalesleall/Desenvolvimento-Web-1.git
+cd Desenvolvimento-Web-1
+cd TRAB
+
+# 2. Instale as dependências
+npm install
+# ou
+yarn install
+
+# 3. Rode o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
+Abra seu navegador e vá até http://localhost:5173
+
+🗂️ Estrutura do projeto
+php
+Copy
+Edit
+.
+├── public/                 # Arquivos estáticos
+├── src/
+│   ├── components/         # Componentes reutilizáveis (se houver)
+│   ├── pages/              # Páginas principais
+│   │   ├── Home.tsx        # Página inicial (lista de Pokémons)
+│   │   ├── Home.css        # Estilos da página Home
+│   │   ├── Pokemon.tsx     # Página de detalhes do Pokémon
+│   │   └── PokemonDetail.css # Estilos da página de detalhes
+│   ├── types/              # Tipos TypeScript
+│   │   └── pokemon.ts      # Tipos relacionados a Pokémon
+│   ├── App.tsx             # Rotas da aplicação
+│   ├── main.tsx            # Ponto de entrada do React
+│   └── index.css           # Estilos globais
+├── index.html              # HTML base
+├── package.json            # Scripts e dependências
+├── tsconfig.json           # Configuração do TypeScript
+└── vite.config.ts          # Configuração do Vite
+📡 Fonte de Dados
+Utilizamos a incrível PokeAPI v2 – uma API pública e gratuita que fornece todos os dados do mundo Pokémon!
+
+💡 Ideias para melhorias futuras
+🔍 Busca por nome ou ID
+
+🧩 Filtros por tipo, geração, etc.
+
+📑 Paginação tradicional
+
+🔁 Exibição da cadeia de evolução
+
+🎨 UI/UX mais elaborada (animações, responsividade)
+
+📦 Gerenciador de estado (ex: Zustand ou Redux Toolkit)
+
+🧪 Testes automatizados
+
+🌆 Imagens:
+
+![image](https://github.com/user-attachments/assets/c905ed43-c38f-49af-832f-6b6be600d79d)
+
+![image](https://github.com/user-attachments/assets/f7c68905-9243-45a4-ada6-03debdadf0bc)
+
+
+🤝 Contribuindo
+Fique à vontade para abrir issues, sugerir melhorias ou mandar aquele pull request. Toda ajuda é bem-vinda! 🧡
+
+📃 Licença
+Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e compartilhar!
+
+Feito com 💙 por THALES LEAL
+
