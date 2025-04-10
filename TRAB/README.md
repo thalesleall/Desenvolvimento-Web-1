@@ -1,6 +1,8 @@
 📘 Pokedex React com PokeAPI
 Uma Pokédex simples, moderna e leve, feita com React, TypeScript, Vite, Axios e React Router, que consome dados diretamente da PokeAPI.
 
+EXPERIMENTE AQUI: https://pokedex-thales.netlify.app/ 
+
 Explore o mundo Pokémon de forma divertida e prática! ✨
 
 🚀 O que esse projeto faz?
